@@ -24,7 +24,7 @@ const Pagination = ({ page, onPageChange }: Props) => {
           <li className={`page-item ${page.last ? 'disabled' : ''} `}>
             <button
               className="page-link"
-              onClick={() => onPageChange(page.number - 1)}
+              onClick={() => onPageChange(page.number + 1)}
             >
               Próxima
             </button>
